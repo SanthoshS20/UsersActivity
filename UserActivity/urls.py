@@ -19,5 +19,6 @@ from activity import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index),
     path('user_activities/', views.getUserActivities),
 ]

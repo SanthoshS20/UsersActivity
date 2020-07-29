@@ -22,3 +22,5 @@ def getUserActivities(request):
     json_data["members"].append(user_detail)
   return JsonResponse(json_data)
 
+def index(request):
+  return render(request, 'index.html', {})
